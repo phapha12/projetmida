@@ -1,20 +1,67 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div class="header"style="background-color: #2e8b57;">
+   <div class="container">
+      <div class="row" >
+         <div class="col-md-5">
+            <!-- Logo -->
+            <div class="logo">
+               <h1><a href="index.html"><i class="glyphicon glyphicon-leaf"></i>  Leaf Bank</a></h1>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <button class="btn btn-default btn-lg"><a routerLink="/retrait" >Retrait a la caisse</a></button>
+                <button class="btn btn-default btn-lg"><a routerLink="/versement" >Versement</a></button>
+                <button class="btn btn-default btn-lg"><a routerLink="/virement" >Virement</a></button>
+              </div>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="navbar navbar-inverse" role="banner">
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a routerLink="/compte" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>Compte<b class="caret"></b></a>
+
+                    </li>
+
+                  </ul>
+                </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+      <div class="page-content">
+      	<div class="row">
+  		  <div class="col-md-2">
+  		  	<div class="sidebar content-box" style="display: block;">
+                  <ul class="nav">
+                      <!-- Main menu -->
+                      <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> Acceuil</a></li>
+                      <li><a routerLink="/test"><i class="glyphicon glyphicon-send"></i> Ecrire un Email</a></li>
+                      <li><a routerLink="/inbox"><i class="glyphicon glyphicon-envelope"></i> Boite de Reception</a></li>
+                      <li><a routerLink="/corbeille"><i class="glyphicon glyphicon-trash"></i> Corbeille</a></li>
+                        <li><a routerLink="/spam"><i class="glyphicon glyphicon-warning-sign"></i> Spam</a></li>
+                      <li><a routerLink="/gestionclient" ><i class="glyphicon glyphicon-import"></i> Gestion des Requetes</a></li>
+                        <li><a routerLink="/inscription" ><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-indent-left">
+                        </i>Creer un compte Leaf Bank</a></li>
+                        <li><a routerLink="/gestionemploye" ><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-indent-left">
+                        </i> Gestion des Utilisateurs</a></li>
+                      <li><a routerLink="/testacc"><i class="glyphicon glyphicon-stats"></i> Les Statistiques</a></li>
+                      <li><a routerLink="/trans"><i class="glyphicon glyphicon-list"></i> Liste des transations</a></li>
+
+                      </ul>
+               </div>
+  		  </div>
+        <div class="col-md-10">
+          <div class="row">
+                      <router-outlet> </router-outlet>	<br /><br />
+                </div>
+
+  		</div>
+      </div>
+
+</div>
