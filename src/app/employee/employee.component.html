@@ -1,0 +1,111 @@
+
+  <section id="aboutUs" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>voici la place reserve aux personnel </h2>
+                <p></p>
+            </div>
+            <div  class="col-md-12 panel-warning">
+                <div  class="row">
+                    <div class="col-md-6">
+                        <div  class="content-box-large">
+                            <div  class="panel-heading">
+                                <div  class="panel-title">Liste du personnel</div>
+
+                                <div  class="panel-options">
+                                    <a  data-rel="collapse" href="#"><i  class="glyphicon glyphicon-refresh"></i></a>
+                                </div>
+                            </div>
+                            <div  class="panel-body">
+                                <table class="table">
+                                    <thead >
+                                        <tr>
+                                            <th >Code</th>
+                                            <th >Nom</th>
+                                            <th >Prenom</th>
+                                            <th >Groupe</th>
+                                            <th >Status</th>
+                                            <th >Supprimer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody _ngcontent-c1="">
+                                        <!--bindings={
+                                         "ng-reflect-ng-for-of": "[object Object],[object Object"
+                                         }--><tr *ngFor="let employe of employes | async">
+
+                                             <td >{{employe.code}}</td>
+                                             <td >{{employe.nom}}</td>
+                                             <td >{{employe.prenom}}</td>
+                                             <td >{{employe.groupe}}</td>
+                                             <td >{{employe.status}}</td>
+                                             <td ><button type="button" class="btn btn-danger dropdown-toggle" (click) = "supprimerEmployer(employe._id)" ><span class="glyphicon glyphicon-remove"></span></button></td>
+                                         </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-md-6">
+
+                        <div class="content-box-large">
+                            <div  class="panel-heading">
+                                <div  class="panel-title">Ajouter un personnel</div>
+
+                                <div class="panel-options">
+
+                                </div>
+                            </div>
+                            <div _class="panel-body">
+                                <form  class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Nom </label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" id="inputEmail3" name="nom" placeholder="Nom" type="text" name="nom"[(ngModel)]="nom">
+                                                </div>
+                                    </div>
+                                    <div  class="form-group">
+                                        <label _class="col-sm-2 control-label">Prenoms </label>
+                                        <div  class="col-sm-12">
+                                            <input  class="form-control " id="inputEmail3" name="prenoms" placeholder="Prenoms" type="text" name="prenoms"[(ngModel)]="prenoms">
+                                                </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="col-sm-2 control-label">Groupe </label>
+                                        <div class="col-sm-10">
+                                            <input  class="form-control " id="inputEmail3" name="groupe" placeholder="Groupe " type="text" name="groupe" [(ngModel)]="groupe">
+                                                </div>
+                                    </div>
+
+
+
+                                    <div  class="form-group">
+                                        <label class="col-sm-2 control-label">Status </label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control " id="inputEmail3" name="status" placeholder="status" type="text" name="status"[(ngModel)]="status">
+                                                </div>
+                                    </div>
+                                    <div  class="form-group">
+                                        <label class="col-sm-2 control-label">Code</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control " id="inputEmail3" name="code" placeholder="Code" type="text" name="code"[(ngModel)]="code">
+                                                </div>
+                                    </div>
+                                    <br >
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button (click)="ajouterEmployer(code, nom, prenoms, groupe, status)" type="submit" class="btn btn-primary">Valider</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <!-- end: -->
+                <!-- end: -->
+
+        </div>
+    </section>

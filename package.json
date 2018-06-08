@@ -1,5 +1,5 @@
 {
-  "name": "leafbank",
+  "name": "ma-banque",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -21,17 +21,20 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "chart.js": "^2.7.2",
     "core-js": "^2.4.1",
-    "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
     "cors": "*",
     "express": "*",
+    "file-saver": "^1.3.8",
     "jsonwebtoken": "*",
     "mongoose": "*",
+    "ng2-file-upload": "^1.3.0",
     "passport": "*",
     "passport-jwt": "*",
-    "bcrypt": "*",
-    "body-parser": "*"
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",
@@ -53,4 +56,14 @@
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
   }
+  ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }

@@ -1,20 +1,116 @@
-<div class="col-md-12 panel-warning">
-  <div class="content-box-header panel-heading" style="background-color: #000; color:white;">
-    <div class="panel-title ">Compte d'Utilisateur</div>
+
+  <section id="skills" class="secPad white">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2>voici la place reserve pour la creation de compte</h2>
+            <p></p>
+        </div>
+        <div  class="col-md-12 panel-warning">
+            <div  class="row">
+                <div class="col-md-6">
+                    <div  class="content-box-large">
+                        <div  class="panel-heading">
+                            <div  class="panel-title">Liste des comptes</div>
+
+                            <div  class="panel-options">
+                                <a  data-rel="collapse" href="#"><i  class="glyphicon glyphicon-refresh"></i></a>
+                            </div>
+                        </div>
+                        <div  class="panel-body">
+                            <table class="table">
+                                <thead >
+                                    <tr>
+                                        <th >nom</th>
+                                        <th >Prenom</th>
+                                        <th >type</th>
+                                        <th >solde</th>
+                                        <th >Supprimer</th>
+<th>Operation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--bindings={
+                                     "ng-reflect-ng-for-of": "[object Object],[object Object"
+                                   }--><tr *ngFor="let client of clients | async">
+
+                                         <td >{{client.nom}}</td>
+                                         <td >{{client.prenom}}</td>
+                                         <td >{{client.type}}</td>
+                                         <td >{{client.solde}}</td>
+                                         <td ><button type="button" class="btn btn-danger dropdown-toggle" (click) = "supprimerClient(client._id)" ><span class="glyphicon glyphicon-remove"></span></button></td>
+                                         <td><a routerLink="/transaction" class="btn btn-primary"><i class="glyphicon glyphicon-ok"></i></a></td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div  class="col-md-6">
+
+                    <div class="content-box-large">
+                        <div  class="panel-heading">
+                            <div  class="panel-title">Ajouter un compte</div>
+
+                            <div class="panel-options">
+
+                            </div>
+                        </div>
+                        <div _class="panel-body">
+                            <form  class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Nom </label>
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="inputEmail1"  placeholder="Nom" type="text" name="nom" [(ngModel)]="nom">
+                                            </div>
+                                </div>
+                                <div  class="form-group">
+                                    <label _class="col-sm-2 control-label">Prenoms </label>
+                                    <div  class="col-sm-12">
+                                        <input  class="form-control " id="inputEmail2"  placeholder="Prenoms" type="text" name="prenom" [(ngModel)]="prenom">
+                                            </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Type </label>
+                                    <div class="col-sm-12">
+                                        <input  class="form-control " id="inputEmail4"  placeholder="type" type="text" name="type" [(ngModel)]="type">
+                                            </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">username </label>
+                                    <div class="col-sm-12">
+                                        <input  class="form-control " id="inputEmail4"  placeholder="username" type="text" name="username" [(ngModel)]="username">
+                                            </div>
+                                </div>
 
 
-  </div>
-  <div class="content-box-large box-with-header">
-    <p>
-      Pellentesque luctus quam quis consequat vulputate. Sed sit amet diam ipsum. Praesent in pellentesque diam, sit amet dignissim erat. Aliquam erat volutpat. Aenean laoreet metus leo, laoreet feugiat enim suscipit quis. Praesent mauris mauris, ornare vitae tincidunt sed, hendrerit eget augue. Nam nec vestibulum nisi, eu dignissim nulla.
-    </p>
+                                <div  class="form-group">
+                                    <label class="col-sm-2 control-label">password</label>
+                                    <div class="col-sm-12">
+                                        <input class="form-control " id="inputEmail5"  placeholder="password" type="password" name="password" [(ngModel)]="password">
+                                            </div>
+                                </div>
+                                <div  class="form-group">
+                                    <label class="col-sm-2 control-label">solde</label>
+                                    <div class="col-sm-12">
+                                        <input class="form-control " id="inputEmail8" placeholder="solde " type="text" name="solde" [(ngModel)]="solde">
+                                            </div>
+                                </div>
+                                <br >
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button (click)="ajouterClient(nom, prenom, password, username, type, solde)" type="submit" class="btn btn-primary">Valider</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-  <br /><br />
-  <p>
-    Pellentesque luctus quam quis consequat vulputate. Sed sit amet diam ipsum. Praesent in pellentesque diam, sit amet dignissim erat. Aliquam erat volutpat. Aenean laoreet metus leo, laoreet feugiat enim suscipit quis. Praesent mauris mauris, ornare vitae tincidunt sed, hendrerit eget augue. Nam nec vestibulum nisi, eu dignissim nulla.
-  </p>
+                </div>
+            </div>
+        </div>
+            <!-- end: -->
+            <!-- end: -->
 
-<br /><br />
-
-</div>
-</div>
+    </div>
+      </section>
