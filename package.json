@@ -10,6 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "engines": {
+    "node": "8.11.1"
+  },
 
   "dependencies": {
     "@angular/animations": "^5.2.0",
@@ -59,7 +62,7 @@
   ,
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/phapha12/projetmida"
   },
   "keywords": [
     "node",
